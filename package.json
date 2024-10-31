@@ -8,7 +8,7 @@
     "build": "dumi build",
     "preview": "dumi preview",
     "prepare": "husky install && dumi setup",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "authors": [
     "2557075675@qq.com"
