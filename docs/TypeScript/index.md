@@ -11,7 +11,7 @@ typeof 一个没有值的变量会返回 undefined
 - undefined 是一个没有设置值的变量。
 - never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。声明为 never 类型的变量只能被 never 类型所赋值
 
-**?? 和 || 的区别**
+#### **?? 和 || 的区别**
 
 - 相同点
   - 用法相同，前后是值，中间用符号连接
@@ -22,7 +22,7 @@ typeof 一个没有值的变量会返回 undefined
     - 使用`??`时，只有当`值1`为`null`或`undefined`时才返回`值2`
     - 使用`||`时，`值1`会转换为布尔值判断，为`true`时返回`值1`,`false`返回`值2`
 
-**type 和 interface的区别**
+#### **type 和 interface的区别**
 
 - 相同点
   - 都可描述一个对象或函数
@@ -152,3 +152,23 @@ typeof 一个没有值的变量会返回 undefined
       }
       */
     ```
+
+
+#### enum
+
+- 用途：`enum`用于定义一组具名的常量。这是一个值的集合，可以是数字或字符串。
+- 特点：
+  - 编译为JavaScript代码
+  - 可用于控制流，例如条件和迭代
+- 例如:
+  
+  ```typescript
+    enum Color {
+    Red,
+    Green,
+    Blue
+  }
+
+  let c: Color = Color.Green;
+  console.log(c); // 输出 1
+  ```
